@@ -9,7 +9,8 @@
 
 using Vježbanje_1;
 
-VZ01.Izvedi();
+VZ02.Izvedi();
+//VZ01.Izvedi();
 
 
 
