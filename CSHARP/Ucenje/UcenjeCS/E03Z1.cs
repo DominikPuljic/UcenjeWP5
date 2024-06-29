@@ -17,8 +17,21 @@ namespace UcenjeCS
 
         public static void Izvedi()
         {
-            // DZ
+            Console.Write("Unesite broj godina");
+            int godine = int.Parse(Console.ReadLine());
+            if (godine >= 18)
+            {
+                Console.WriteLine("Punoljetan");
+            }
+            else
+            {
+                Console.WriteLine("Maloljetan");
+            }
+
         }
+        
+            
+        
 
 
 
