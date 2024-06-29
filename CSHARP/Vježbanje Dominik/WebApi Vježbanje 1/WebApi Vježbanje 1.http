@@ -1,0 +1,6 @@
+@WebApi_Vježbanje_1_HostAddress = http://localhost:5208
+
+GET {{WebApi_Vježbanje_1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
