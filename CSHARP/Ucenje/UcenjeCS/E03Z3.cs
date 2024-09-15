@@ -16,43 +16,7 @@ namespace UcenjeCS
 
         public static void Izvedi()
         {
-
-            Console.Write("Unesi prvi broj");
-
-            int prvibroj = int.Parse(Console.ReadLine());
-
-            
-            
-            Console.WriteLine("Unesi drugi broj");
-
-            int drugibroj = int.Parse(Console.ReadLine());
-
-
-            int manjibroj;
-
-            if (prvibroj < drugibroj)
-            {
-                manjibroj = prvibroj;
-            } 
-            else
-            {
-                manjibroj = drugibroj;
-            }
-            Console.WriteLine("ispiši manji broj" + manjibroj);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            // DZ
         }
 
         // isiti zadatak ali za tri unesena broja ispisati najmanji

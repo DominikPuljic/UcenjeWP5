@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS
 {
-    internal class E03Z2
+    internal class E01Z1
     {
-
-        // Program od korisnika traži unos cijelog broja
-        // Program ispisuje da li je uneseni broj paran ili ne
-
-
 
         public static void Izvedi()
         {
-            // DZ
+
+            // zadatak
+            // Korisnik unosi dva cijela broja i ispisuje njihov zbroj
+
+          
+
+
+
         }
-
-
-
-
 
     }
 }
