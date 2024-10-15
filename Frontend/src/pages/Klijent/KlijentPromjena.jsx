@@ -43,9 +43,9 @@ export default function KlijentiPromjena(){
         //console.log(podaci.get('naziv'))
         promjena({
             Ime: podaci.get('Ime'),
-            Prezime:podaci.get('prezime'),
-            Email:podaci.get('email'),
-            Telefon:podaci.get('telefon'),
+            Prezime: podaci.get('prezime'),
+            Email: podaci.get('email'),
+            Telefon: podaci.get('telefon'),
         })
     }
 

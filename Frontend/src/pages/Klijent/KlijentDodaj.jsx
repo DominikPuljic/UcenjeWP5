@@ -25,9 +25,9 @@ export default function KlijentiDodaj(){
         //console.log(podaci.get('naziv'))
         dodaj({
             Ime: podaci.get('Ime'),
-            Prezime: get(podaci.get('prezime')),
-            Email: get(podaci.get('email')),
-            Telefon: get(podaci.get('telefon')),
+            Prezime: podaci.get('prezime'),
+            Email: podaci.get('email'),
+            Telefon: podaci.get('telefon'),
              
         })
     }
