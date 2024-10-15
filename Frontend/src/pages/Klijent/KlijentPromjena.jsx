@@ -11,7 +11,7 @@ export default function KlijentiPromjena(){
     const navigate = useNavigate()
     const routeParams = useParams()
 
-    async function dohvatiKlijente(){
+    async function dohvatiKlijent(){
         const odgovor = await KlijentService.getBySifra(routeParams.sifra);
         if(odgovor.greska){
             alert(odgovor.poruka)
@@ -26,7 +26,7 @@ export default function KlijentiPromjena(){
         dohvatiKlijent();
      },[])
 
-     async function promjena(klijenta) {
+     async function promjena(klijent) {
         //console.log(smjer)
         //console.log(JSON.stringify(smjer))
         const odgovor = await KlijentService.promjena(routeParams.sifra,klijent)

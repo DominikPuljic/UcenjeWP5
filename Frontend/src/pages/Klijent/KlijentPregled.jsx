@@ -9,9 +9,9 @@ export default function KlijentPregled(){
 
     const navigate = useNavigate()
 
-    const[Klijent, setKlijent] = useState();
+    const[klijent, setKlijent] = useState();
 
-    async function dohvatiKlijente(){
+    async function dohvatiKlijenti(){
         const odgovor = await KlijentService.get();
         if(odgovor.greska){
             alert(odgovor.poruka)

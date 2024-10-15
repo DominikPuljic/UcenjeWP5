@@ -5,9 +5,9 @@ import NavBarOvlasteniservis from './components/NavBarOvlasteniservis';
 import { Route, Routes } from 'react-router-dom';
 import { RouteNames } from './constants';
 import Pocetna from './pages/Pocetna';
-import KlijentiPregled from './pages/Klijenti/KlijentPregled';
-import KlijentiDodaj from './pages/Klijenti/KlijentDodaj';
-import KlijentiPromjena from './pages/Klijenti/KlijentPromjena';
+import KlijentiPregled from './pages/Klijent/KlijentPregled';
+import KlijentiDodaj from './pages/Klijent/KlijentDodaj';
+import KlijentiPromjena from './pages/Klijent/KlijentPromjena';
 
 
 function App() {
