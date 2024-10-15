@@ -3,7 +3,7 @@ import { HttpService } from "./HttpService";
 
 
 async function get(){
-    return await HttpService.get('/Smjer')
+    return await HttpService.get('/Klijent')
     .then((odgovor)=>{
         //console.log(odgovor.data)
         //console.table(odgovor.data)
@@ -11,47 +11,47 @@ async function get(){
     })
     .catch((e)=>{
         //console.log(e)
-        return {greska: true, poruka: 'Problem kod dohvaćanja smjerova'}   
+        return {greska: true, poruka: 'Problem kod dohvaćanja klijenta'}   
     })
 }
 
 async function brisanje(sifra){
-    return await HttpService.delete('/Smjer/' + sifra)
+    return await HttpService.delete('/Klijent/' + sifra)
     .then(()=>{
         return {greska: false, poruka: 'Obrisano'}
     })
     .catch(()=>{
-        return {greska: true, poruka: 'Problem kod brisanja smjera'}   
+        return {greska: true, poruka: 'Problem kod brisanja klijenta'}   
     })
 }
 
-async function dodaj(smjer){
-    return await HttpService.post('/Smjer',smjer)
+async function dodaj(klijent){
+    return await HttpService.post('/Klijent',klijent)
     .then(()=>{
         return {greska: false, poruka: 'Dodano'}
     })
     .catch(()=>{
-        return {greska: true, poruka: 'Problem kod dodavanja smjera'}   
+        return {greska: true, poruka: 'Problem kod dodavanja klijenta'}   
     })
 }
 
-async function promjena(sifra,smjer){
-    return await HttpService.put('/Smjer/' + sifra,smjer)
+async function promjena(sifra,klijent){
+    return await HttpService.put('/Klijent/' + sifra,klijent)
     .then(()=>{
         return {greska: false, poruka: 'Dodano'}
     })
     .catch(()=>{
-        return {greska: true, poruka: 'Problem kod dodavanja smjera'}   
+        return {greska: true, poruka: 'Problem kod dodavanja klijenta'}   
     })
 }
 
 async function getBySifra(sifra){
-    return await HttpService.get('/Smjer/'+sifra)
+    return await HttpService.get('/Klijent/'+sifra)
     .then((odgovor)=>{
         return {greska: false, poruka: odgovor.data}
     })
     .catch((e)=>{
-        return {greska: true, poruka: 'Problem kod dohvaćanja smjera s šifrom '+sifra}   
+        return {greska: true, poruka: 'Problem kod dohvaćanja klijenta s šifrom '+sifra}   
     })
 }
 

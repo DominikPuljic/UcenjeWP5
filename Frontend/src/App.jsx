@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container';
 import './App.css'
-import NavBarEdunova from './components/NavBarEdunova';
+import NavBarOvlasteniservis from './components/NavBarOvlasteniservis';
 import { Route, Routes } from 'react-router-dom';
 import { RouteNames } from './constants';
 import Pocetna from './pages/Pocetna';
-import SmjeroviPregled from './pages/smjerovi/SmjeroviPregled';
-import SmjeroviDodaj from './pages/smjerovi/SmjeroviDodaj';
-import SmjeroviPromjena from './pages/smjerovi/SmjeroviPromjena';
+import KlijentiPregled from './pages/Klijenti/KlijentiPregled';
+import KlijentiDodaj from './pages/klijenti/KlijentiDodaj';
+import KlijentiPromjena from './pages/klijenti/KlijentiPromjena';
 
 
 function App() {
@@ -15,17 +15,17 @@ function App() {
   return (
     <>
     <Container>
-      <NavBarEdunova />
+      <NavBarOvlasteniservis />
       <Routes>
         <Route path={RouteNames.HOME} element={<Pocetna/>} />
 
-        <Route path={RouteNames.SMJER_PREGLED} element={<SmjeroviPregled/>}/>
-        <Route path={RouteNames.SMJER_NOVI} element={<SmjeroviDodaj/>}/>
-        <Route path={RouteNames.SMJER_PROMJENA} element={<SmjeroviPromjena/>}/>
+        <Route path={RouteNames.KLIJENT_PREGLED} element={<KlijentiPregled/>}/>
+        <Route path={RouteNames.KLIJENT_NOVI} element={<KlijentiDodaj/>}/>
+        <Route path={RouteNames.KLIJENT_PROMJENA} element={<KlijentiPromjena/>}/>
 
       </Routes>
       <hr/>
-      &copy; Edunova
+      &copy; Ovlasteni servis
     </Container>
     
     </>
