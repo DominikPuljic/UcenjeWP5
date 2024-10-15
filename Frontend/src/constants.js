@@ -2,9 +2,10 @@
 export const RouteNames = {
     HOME: '/',
 
-    SMJER_PREGLED: '/smjerovi',
-    SMJER_NOVI: '/smjerovi/dodaj',
-    SMJER_PROMJENA: '/smjerovi/:sifra'
+    KLIJENT_PREGLED: '/klijenti',
+    KLIJENT_NOVI: '/klijenti/dodaj',
+    KLIJENT_PROMJENA: '/klijenti/:sifra'
 }
 
-export const BACKEND_URL = 'http://tjakopec-001-site2.ftempurl.com/api/v1'
+export const BACKEND_URL = 'https://dominikpuljic-001-site1.atempurl.com/api/v1'
+
