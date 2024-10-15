@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
 import { RouteNames } from '../constants';
 
-export default function NavBarOvlašteniservis(){
+export default function NavBarOvlasteniservis(){
 
     const navigate = useNavigate(); // U pravilu ; ne treba
 
