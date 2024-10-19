@@ -24,10 +24,10 @@ export default function KlijentiDodaj(){
         let podaci = new FormData(e.target)
         //console.log(podaci.get('naziv'))
         dodaj({
-            Ime: podaci.get('Ime'),
-            Prezime: podaci.get('prezime'),
-            Email: podaci.get('email'),
-            Telefon: podaci.get('telefon'),
+            ime: podaci.get('Ime'),
+            prezime: podaci.get('prezime'),
+            email: podaci.get('email'),
+            telefon: podaci.get('telefon'),
              
         })
     }
